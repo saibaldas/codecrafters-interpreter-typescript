@@ -1,0 +1,5 @@
+IN VSCODE: docker build -t saibaldas/codecraftersinterpretertypescript .
+IN CMD: docker run -p 4500:4500 --rm -i -t saibaldas/codecraftersinterpretertypescript:latest /bin/bash
+THEN IN BASH :
+    set -e
+    bun run "app/main.ts" "$@" tokenize app/empty.lox
